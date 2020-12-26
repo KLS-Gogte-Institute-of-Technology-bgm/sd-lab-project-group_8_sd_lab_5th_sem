@@ -19,6 +19,8 @@ This is the project file which is used to return a book to the library
 ## Built with
 •	Python
 <br>
+• MySql
+<br>
 ## Python Dependencies
 •	tkinter<br>
 •	pillow<br>

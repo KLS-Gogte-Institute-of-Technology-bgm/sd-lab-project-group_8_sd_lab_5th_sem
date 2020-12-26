@@ -1,0 +1,46 @@
+mysql> use db;
+Database changed
+mysql> show tables;
++--------------+
+| Tables_in_db |
++--------------+
+| books        |
+| books_issued |
+| user         |
++--------------+
+3 rows in set (0.04 sec)
+
+mysql> select * from books;
++-----+----------------+------------------+--------+
+| bid | title          | author           | status |
++-----+----------------+------------------+--------+
+| 1   | The Magic      | Rhonde Byrne     | avail  |
+| 3   | 1984           | George Orwell    | issued |
+| 4   | The Hobbit     | J R R Tolkien    | issued |
+| 5   | Frankestein    | Mary Shelley     | avail  |
+| 6   | Little Women   | Loius May Alcott | avail  |
+| 8   | Fahrenheit 451 | Ray Bradbury     | avail  |
++-----+----------------+------------------+--------+
+6 rows in set (0.00 sec)
+
+mysql> select * from user;
++----------+----------+
+| username | password |
++----------+----------+
+| John     |      123 |
+| David    |    90220 |
+| Alex     |     2537 |
+| Mark     |     1209 |
++----------+----------+
+4 rows in set (0.00 sec)
+
+mysql> select * from books_issued;
++-----+----------+
+| bid | issuedto |
++-----+----------+
+| 3   | Alen     |
+| 4   | David    |
++-----+----------+
+2 rows in set (0.00 sec)
+
+mysql>
